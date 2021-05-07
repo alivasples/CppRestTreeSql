@@ -13,9 +13,9 @@ vector<int> Utils::splitInts(string s){
 	// pusing all items into our vector
 	int n;
 	char sep;
-    while( is >> n ) {
-        ints.push_back(n);
-        is >> sep;
+	while( is >> n ) {
+		ints.push_back(n);
+		is >> sep;
 	}
 	// returning our vector
 	return ints;
