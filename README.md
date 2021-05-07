@@ -40,3 +40,8 @@ de mis códigos en inglés debido que ésta es la mejor práctica.
 		```console
 			dominio@usuario:~$ curl http://localhost:9080/commonAncestor/<numero1>,<numero2>
 		```
+
+
+### Nota - Unit Tests
+Estamos realizando las pruebas unitarias del lado del servidor, estas han sido implementadas en el módulo Tester (Tester.h y Tester.cpp).
+El resultado de estas pruebas se ven cuando se ejecuta el servidor.  
