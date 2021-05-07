@@ -25,10 +25,18 @@ de mis códigos en inglés debido que ésta es la mejor práctica.
 
 3. Deste otra terminal probar la funcionalidad de nuestro programa:
 	1.  Insertar un nodo <numero> en el Árbol: 
-		```console dominio@usuario:~$ curl -X POST http://localhost:9080/addItem/<numero>```
+		```console 
+			dominio@usuario:~$ curl -X POST http://localhost:9080/addItem/<numero>
+		```
 	2.  Guardar el actual árbol en base de datos y crear uno vacío: 
-		```console dominio@usuario:~$ curl -X POST http://localhost:9080/newTree```
+		```console 
+			dominio@usuario:~$ curl -X POST http://localhost:9080/newTree
+		```
 	3.  Mostrar los recorridos del árbol actual: 
-		```console dominio@usuario:~$ curl http://localhost:9080/seeTree```
+		```console
+			dominio@usuario:~$ curl http://localhost:9080/seeTree
+		```
 	4.  Buscar el ancestor común de dos elementos <numero1> y <numero2>: 
-		```console dominio@usuario:~$ curl http://localhost:9080/commonAncestor/<numero1>,<numero2>```
+		```console
+			dominio@usuario:~$ curl http://localhost:9080/commonAncestor/<numero1>,<numero2>
+		```
