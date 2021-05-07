@@ -6,7 +6,7 @@ A pesar que el examen es en español, codificaré y colocaré los comentarios
 de mis códigos en inglés debido que ésta es la mejor práctica.
 
 ## Consideraciones Previas:
-1. Estamos usando **Pistache** como REST API, para instalar ver la [documentación oficial]{http://pistache.io/docs/} 
+1. Estamos usando **Pistache** como REST API, para instalar ver la [documentación oficial](http://pistache.io/docs/)
 2. Estamos usando **SQLite** como gestor de base de datos, si está en un sistema operativo basado en ubuntu, debe haber instalado previamente el gestor con los comandos:
 	```console
 		dominio@usuario:~$ sudo apt-get install sqlite3 libsqlite3-dev
