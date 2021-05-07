@@ -23,7 +23,7 @@ de mis códigos en inglés debido que ésta es la mejor práctica.
 		dominio@usuario:~$ ./exam 
 	```
 
-3. Deste otra terminal probar la funcionalidad de nuestro programa:
+3. Desde otra terminal probar la funcionalidad de nuestro programa:
 	1.  Insertar un nodo <numero> en el Árbol: 
 		```console 
 			dominio@usuario:~$ curl -X POST http://localhost:9080/addItem/<numero>
