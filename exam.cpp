@@ -130,6 +130,7 @@ int main(int argc, char *argv[]) {
     bool passed = Tester::testAll(message);
     cout << message << endl;
 	if(passed){
+        cout << "All Unit Tests Passed\n";
 		// Just creating our endpoints and running the server
 	    TreeEndpoint treeServer(Address(Ipv4::any(), Port(9080)));
 	    treeServer.init();

@@ -76,6 +76,7 @@ bool Tester::test10(BST<int>& tree){
 
 
 bool Tester::testAll(string &msg){
+	bool passed = true;
 	msg = string("TESTING WITH TREE:\n") +
 		  "         5     \n" +
 	      "      /     \\ \n" +
@@ -97,44 +98,43 @@ bool Tester::testAll(string &msg){
 	tree.insert(10);
 	if(!test1(tree)) { 
 		msg += "Test 1 Failed\n"; 
-		return false; 
+		passed = false; 
 	}
 	if(!test2(tree)) { 
 		msg += "Test 2 Failed\n"; 
-		return false; 
+		passed = false; 
 	}
 	if(!test3(tree)) { 
 		msg += "Test 3 Failed\n"; 
-		return false; 
+		passed = false; 
 	}
 	if(!test4(tree)) { 
 		msg += "Test 4 Failed\n"; 
-		return false; 
+		passed = false; 
 	}
 	if(!test5(tree)) { 
 		msg += "Test 5 Failed\n"; 
-		return false; 
-	}
-	if(!test8(tree)) { 
-		msg += "Test 8 Failed\n"; 
-		return false; 
-	}
-	if(!test9(tree)) { 
-		msg += "Test 9 Failed\n"; 
-		return false; 
-	}
-	if(!test10(tree)) { 
-		msg += "Test 10 Failed\n"; 
-		return false; 
+		passed = false; 
 	}
 	if(!test6(tree)) { 
 		msg += "Test 6 Failed\n"; 
-		return false; 
+		passed = false; 
 	}
 	if(!test7(tree)) { 
 		msg += "Test 7 Failed\n"; 
-		return false; 
+		passed = false; 
 	}
-	msg += "All tests passed!\n";
-	return true;
+	if(!test8(tree)) { 
+		msg += "Test 8 Failed\n"; 
+		passed = false; 
+	}
+	if(!test9(tree)) { 
+		msg += "Test 9 Failed\n"; 
+		passed = false; 
+	}
+	if(!test10(tree)) { 
+		msg += "Test 10 Failed\n"; 
+		passed = false; 
+	}
+	return passed;
 }
